@@ -1,0 +1,23 @@
+{
+  "name": "MovieSearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.1.0",
+    "normalize.css": "^8.0.1",
+    "pwa-helpers": "^0.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "owc-dev-server": "^0.3.0"
+  },
+  "scripts": {
+    "start": "npx owc-dev-server --app-index index.html --open",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
