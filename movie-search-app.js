@@ -1,11 +1,11 @@
 import { LitElement, html } from 'lit-element';
+import { installRouter } from 'pwa-helpers/router.js';
 import './src/components/movie-detail.js';
 import './src/components/list-items.js';
 import './src/components/item-not-found.js';
 import './src/components/header-component.js';
 import './src/components/no-match.js';
 import api from './src/api.js';
-import { installRouter } from 'pwa-helpers/router.js';
 
 const { getFilmsByName } = api();
 
@@ -60,6 +60,7 @@ class MovieSearchApp extends LitElement {
           this.films = [];
         } else {
           this.films = res;
+          this.fetchSuccess = true;
         }
       });
   }
